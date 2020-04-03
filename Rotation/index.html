@@ -29,11 +29,29 @@
         }
 
         div:hover img:nth-child(1) {            
-            transform: rotate(-20deg);
+            /* transform: rotate(-20deg); */
+            animation: moveBody 2s infinite linear;
         }
         div:hover img:nth-child(2) {            
-            transform: rotate(20deg);
+            /* transform: rotate(20deg); */
+            animation: moveBody 1s infinite linear;
         }
+
+        @keyframes moveBody {
+            25% {
+                transform: rotate(-20deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(20deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
 
     </style>
 

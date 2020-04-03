@@ -44,9 +44,29 @@
             font-size: 30px;            
         }
 
+        
+        .point2 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        .point2 div {
+            /* background-color: blue; */
+            height: 50%;
+            width: 50%;
+            border-right: 2px black solid;
+        }
+
         .point-secs {
             animation: seconds 60s infinite linear;
         }
+
+        .point-minute {
+            animation: seconds 3600s infinite linear;
+        }
+
+
+
 
         @keyframes seconds {
             100% {
@@ -113,6 +133,11 @@
         <div class="num">12</div>
 
         <div class="point point-secs">|</div>
+
+        <div class="point2 point-secs"><div></div></div>
+        <div class="point2 point-minute">
+            <div></div>
+        </div>
 
     </div>
 
