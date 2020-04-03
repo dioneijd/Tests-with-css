@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Rotation</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        div {
+            height: 300px;
+            width: 500px;
+            border: solid 1px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        div img {
+            height: 50%;
+        }
+
+        div:hover img:nth-child(1) {            
+            transform: rotate(-20deg);
+        }
+        div:hover img:nth-child(2) {            
+            transform: rotate(20deg);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div>        
+        <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="" srcset="">
+        <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="" srcset="">
+    </div>
+
+
+</body>
+</html>

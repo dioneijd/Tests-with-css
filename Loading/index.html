@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Loading</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .load {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(33, 97, 33);
+        }
+
+        .spin {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* background-color: seagreen; */
+            border: 2px solid rgb(33, 97, 33);
+            border-top: 2px solid rgba(0, 0, 0, 0);
+            animation: test 3s linear infinite;
+            text-align: center;
+        }
+
+        @keyframes test {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading {
+            position: absolute;            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="load">
+        <div class="spin">^</div>
+        <div class="loading">LOADING</div>
+    </div>
+
+</body>
+</html>
