@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .watch {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(79, 137, 224);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 50%;
+            border: solid 20px rgb(47, 83, 136); 
+        }
+
+        .num {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(15, 15, 90);
+            height: 200px;
+        }
+
+        .point {
+            position: absolute;
+            /* background-color: crimson; */
+            padding: 18px;
+            height: 164px;
+            color: rgb(47, 83, 136);
+            font-weight: bold;
+            font-size: 30px;            
+        }
+
+        .point-secs {
+            animation: seconds 60s infinite linear;
+        }
+
+        @keyframes seconds {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .num:nth-child(1) {
+            transform: rotate(30deg);
+        }
+        .num:nth-child(2) {
+            transform: rotate(60deg);
+        }
+        .num:nth-child(3) {
+            transform: rotate(90deg);
+        }
+        .num:nth-child(4) {
+            transform: rotate(120deg);
+        }
+        .num:nth-child(5) {
+            transform: rotate(150deg);
+        }
+        .num:nth-child(6) {
+            transform: rotate(180deg);
+        }
+        .num:nth-child(7) {
+            transform: rotate(210deg);
+        }
+        .num:nth-child(8) {
+            transform: rotate(240deg);
+        }
+        .num:nth-child(9) {
+            transform: rotate(270deg);
+        }
+        .num:nth-child(10) {
+            transform: rotate(300deg);
+        }
+        .num:nth-child(11) {
+            transform: rotate(330deg);
+        }
+        .num:nth-child(12) {
+            transform: rotate(0deg);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="watch">
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+        <div class="num">7</div>
+        <div class="num">8</div>
+        <div class="num">9</div>
+        <div class="num">10</div>
+        <div class="num">11</div>
+        <div class="num">12</div>
+
+        <div class="point point-secs">|</div>
+
+    </div>
+
+
+
+</body>
+</html>
