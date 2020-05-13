@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+
+* {
+    font-family: roboto;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: rgb(49, 49, 49);
+	color: white;	
+}
+
+
+
+
+label.switch {
+	--switch-bg: tomato;
+	--switch-slider-off-bg: white;
+	--switch-slider-on-bg: rgb(226, 44, 11);
+	--switch-width: 42px;
+	--switch-height: 20px;
+	--switch-padding: 2px;
+	--switch-movement: calc(var(--switch-width) - var(--switch-height) );
+
+
+	box-sizing: border-box;
+	background-color: var(--switch-bg);
+	width: var(--switch-width);
+	border-radius: var(--switch-width);
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+label.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+	height: 0;
+	display: none;
+}
+
+
+label.switch span {
+	background-color: var(--switch-slider-off-bg);
+	height: calc(var(--switch-height) - var(--switch-padding) * 2);
+	width: calc(var(--switch-height) - var(--switch-padding) * 2);
+	margin: var(--switch-padding);
+	border-radius: var(--switch-height);
+	transition: .3s;
+}
+
+
+label.switch input[type="checkbox"]:checked ~ span {
+	transform: translateX(var(--switch-movement));
+	background-color: var(--switch-slider-on-bg);	
+}
+
+
+
+
