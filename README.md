@@ -1,7 +1,7 @@
 # REPO OF CSS TESTS AND EXAMPLES
 
 ## 3D Logo
-<p align="center">
+<p>
   <a href="./3D%20Logo">
     <img src="./3D%20Logo/example.gif" width="550">
   </a>
@@ -11,8 +11,8 @@
 
 ## Light Blinking
 <p>
-  <a href="./Light%20blinking">
-    <img src="./Light%20blinking/example.gif" width="550">
+  <a href="./Light%20Blinking">
+    <img src="./Light%20Blinking/example.gif" width="550">
   </a>
 </p>
 
