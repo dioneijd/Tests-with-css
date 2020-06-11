@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+
+* {
+    font-family: roboto;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: rgb(49, 49, 49);
+	color: white;	
+}
+
+
+
+
+
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	margin: 10px;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+	content: '\2714';
+	/* content: ''; */
+	/* display:inline-block;
+	width: 15px;
+	height: 1em; */
+	border: 0.1em solid teal;
+	border-radius: 0.2em;
+	padding: 0.1em;
+	color: transparent;
+	margin-right: 10px;
+}
+
+
+input[type="checkbox"]:checked + label:before {
+	background-color: turquoise;
+	border: 0.1em solid turquoise;
+	color: rgb(9, 39, 9);
+}
+
+
