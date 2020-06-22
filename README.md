@@ -35,3 +35,12 @@
 </p>
 
 ----
+
+## Simple Checkbox
+<p>
+  <a href="./Simple%20Checkbox">
+    <img src="./Simple%20Checkbox/example.png" width="550">
+  </a>
+</p>
+
+----
